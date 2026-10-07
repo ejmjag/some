@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="kk">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Indefinite Pronouns | MAGIST.PRO</title>
+<style>
+*{box-sizing:border-box}:root{--navy:#0d2948;--navy2:#123f73;--ink:#172033;--paper:#f6f8fb;--gold:#c6a15b;--line:#dce3ea;--muted:#667386;--soft:#edf3f8;--warm:#fff8e9}
+html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.68 Arial,Helvetica,sans-serif}
+header{padding:76px max(24px,calc((100vw - 1000px)/2));background:linear-gradient(135deg,#0a223d,#123f73);color:#fff;position:relative;overflow:hidden}
+header:after{content:"";position:absolute;width:360px;height:360px;border:1px solid #ffffff1f;border-radius:50%;right:-90px;top:-120px;box-shadow:0 0 0 70px #ffffff08,0 0 0 140px #ffffff05}
+.k,.n{font-weight:900;letter-spacing:.14em;text-transform:uppercase;font-size:12px}.k{color:#e4c886;position:relative;z-index:1}.n{color:#9a762d}
+h1,h2,h3{font-family:Georgia,serif}header h1{font-size:clamp(50px,8vw,86px);line-height:.95;margin:15px 0 20px;position:relative;z-index:1}header p{max-width:760px;font-size:20px;color:#e8eef5;position:relative;z-index:1}
+nav{position:sticky;top:0;z-index:8000;background:#ffffffef;border-bottom:1px solid var(--line);backdrop-filter:blur(12px);overflow-x:auto;white-space:nowrap;padding:10px max(18px,calc((100vw - 1000px)/2))}
+nav a{display:inline-block;text-decoration:none;color:var(--navy);font-size:12px;font-weight:900;padding:8px 9px;border-radius:7px}nav a:hover{background:var(--soft)}
+main{max-width:1000px;margin:auto;padding:34px 22px 90px}h2,h3{color:var(--navy)}h2{font-size:clamp(29px,4vw,39px);line-height:1.1;margin:8px 0 20px}h3{font-size:24px;margin-top:28px}
+section{background:#fff;border:1px solid var(--line);border-top:4px solid var(--navy);border-radius:16px;padding:34px;margin:26px 0;box-shadow:0 7px 24px #18324d0a;scroll-margin-top:82px}.gold{border-top-color:var(--gold)}
+.rule,.note,.trap{padding:17px 19px;border-radius:10px;margin:17px 0}.rule{background:var(--soft);border-left:4px solid var(--navy2)}.note{background:var(--warm);border-left:4px solid var(--gold)}.trap{background:#fff0eb;border-left:4px solid #b65b48}
+.ex{background:#fbfcfe;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:9px 0}.en{font-weight:800;color:var(--navy)}.kz{color:var(--muted);margin-top:3px}
+table{width:100%;border-collapse:separate;border-spacing:0;margin:18px 0;border:1px solid var(--line);border-radius:11px;overflow:hidden}th,td{padding:13px 14px;text-align:left;vertical-align:top;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}th:last-child,td:last-child{border-right:0}tr:last-child td{border-bottom:0}th{background:var(--soft);color:var(--navy)}
+.mapgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.mapitem{background:#f8fafc;border:1px solid var(--line);border-radius:9px;padding:13px}.mapitem b{color:var(--navy)}
+.test{margin-top:20px;padding:21px;border:1px solid #d8e0e8;border-radius:12px;background:#f9fbfd}.q{font-weight:850;font-size:19px}.opt{background:#fff;border:1px solid #d9e0e7;padding:10px 13px;margin:7px 0;border-radius:8px;cursor:pointer}.opt:hover{border-color:#91a3b7}.reviewq .opt.selected{outline:2px solid var(--gold);background:#fffaf0}.reviewq .opt.correct{background:#e6f2e3;border-color:#6d9b68;outline:none}.reviewq .opt.wrong{background:#fae7e3;border-color:#c47770;outline:none}.ans{padding:15px;background:#edf5ea;border-radius:8px;margin-top:10px}
+.resultBtn{border:0;background:var(--navy);color:#fff;padding:14px 20px;border-radius:9px;font-weight:900;font-size:16px;cursor:pointer;margin-top:22px}.score{display:none;background:var(--navy);color:#fff;padding:18px;border-radius:10px;margin-top:13px;font-size:20px;font-weight:900}.score.show{display:block}
+#studyCanvas{position:absolute;left:0;top:0;z-index:9000;pointer-events:none;overflow:visible}#studyTools{position:fixed;right:18px;bottom:18px;z-index:9999;display:flex;flex-direction:column;gap:7px;padding:8px;background:#ffffffed;border:1px solid #d6dee7;border-radius:14px;box-shadow:0 12px 32px #102b4c2b}#studyTools button{width:46px;height:42px;border:1px solid #d8e0e8;background:#fff;border-radius:9px;cursor:pointer;font-weight:900;color:var(--navy)}#studyTools button.active{background:var(--navy);color:#fff}
+#notesPanel{position:fixed;right:82px;bottom:18px;z-index:9998;width:min(330px,calc(100vw - 110px));display:none;background:#fff;border:1px solid #d6dee7;border-radius:14px;padding:13px;box-shadow:0 12px 32px #102b4c2b}#notesPanel.show{display:block}#notesPanel textarea{width:100%;height:180px;margin-top:8px;border:1px solid #d8e0e8;border-radius:9px;padding:11px}
+@media(max-width:700px){header{padding-top:55px;padding-bottom:55px}main{padding:22px 14px 80px}section{padding:22px 18px}.mapgrid{grid-template-columns:1fr}table{font-size:13px}th,td{padding:9px}}
+
+html.study-lock,body.study-lock{overscroll-behavior:none!important;scroll-behavior:auto!important}
+body.study-lock{touch-action:none!important}
+body.study-lock #studyCanvas{touch-action:none!important;-webkit-user-select:none!important;user-select:none!important;-webkit-touch-callout:none!important}
+</style></head><body>
+<header><div class="k">ENGLISH GRAMMAR · KT PREPARATION · MAGIST.PRO</div><h1>Indefinite<br>Pronouns</h1><p>Белгісіздік есімдіктері: someone, anyone, everyone, something, anything, everything және олардың негізгі қолданылуы.</p></header>
+<nav><a href="#map">EXAM MAP</a><a href="#meaning">BASICS</a><a href="#some">SOME</a><a href="#any">ANY</a><a href="#every">EVERY</a><a href="#verb">VERB</a><a href="#else">ELSE</a><a href="#compare">COMPARE</a><a href="#review">REVIEW</a></nav>
+<main>
+<section class="gold" id="map"><div class="n">5-SECOND EXAM MAP</div><h2>Алдымен мағынасын анықта</h2><div class="mapgrid">
+<div class="mapitem"><b>some-</b><br>көбіне affirmative: someone, something, somewhere</div>
+<div class="mapitem"><b>any-</b><br>көбіне question / negative: anyone, anything, anywhere</div>
+<div class="mapitem"><b>every-</b><br>барлығы: everyone, everything, everywhere</div>
+<div class="mapitem"><b>-one / -body</b><br>адам</div>
+<div class="mapitem"><b>-thing</b><br>зат / нәрсе</div>
+<div class="mapitem"><b>-where</b><br>орын</div></div>
+<div class="note"><b>Маңызды:</b> someone = somebody, anyone = anybody, everyone = everybody. Мағыналары бірдей; <b>-one</b> және <b>-body</b> адамдарға қатысты.</div></section>
+
+<section id="meaning"><div class="n">01 · НЕГІЗГІ ТҮСІНІК</div><h2>Indefinite Pronouns деген не?</h2>
+<p><b>Indefinite Pronouns — белгісіздік есімдіктері.</b> Олар адамның, заттың немесе орынның нақты кім/не/қай жерде екенін атамай, жалпы немесе белгісіз түрде көрсетеді.</p>
+<div class="rule"><b>Сөздің бірінші бөлігі мағынаны анықтайды:</b><br>
+<b>some-</b> → біреу / бір нәрсе / бір жерде; көбіне affirmative<br>
+<b>any-</b> → біреу/бір нәрсе бар ма; negative/question; affirmative-де «кез келген»<br>
+<b>every-</b> → барлығы / барлық жерде<br><br>
+<b>Соңғы бөлігі нені айтып тұрғанын көрсетеді:</b><br>
+<b>-one / -body</b> → адам<br>
+<b>-thing</b> → зат / нәрсе<br>
+<b>-where</b> → орын</div>
+<div class="note"><b>Мысалы:</b> some + one = <b>someone</b> → біреу; any + thing = <b>anything</b> → бір нәрсе / ештеңе (negative контексте); every + where = <b>everywhere</b> → барлық жерде.</div>
+<table><tr><th></th><th>Адам</th><th>Зат / нәрсе</th><th>Орын</th></tr>
+<tr><td><b>SOME</b></td><td>someone / somebody</td><td>something</td><td>somewhere</td></tr>
+<tr><td><b>ANY</b></td><td>anyone / anybody</td><td>anything</td><td>anywhere</td></tr>
+<tr><td><b>EVERY</b></td><td>everyone / everybody</td><td>everything</td><td>everywhere</td></tr></table>
+<div class="ex"><div class="en">Someone is waiting for you.</div><div class="kz">Сені біреу күтіп тұр.</div></div>
+<div class="ex"><div class="en">I need something to drink.</div><div class="kz">Маған ішетін бір нәрсе керек.</div></div></section>
+
+<section id="some"><div class="n">02 · SOME-COMPOUNDS</div><h2>Someone / Somebody / Something / Somewhere</h2>
+<p><b>Some-</b> формалары көбіне affirmative сөйлемдерде қолданылады.</p>
+<div class="rule"><b>someone / somebody</b> → біреу<br><b>something</b> → бір нәрсе<br><b>somewhere</b> → бір жерде / бір жерге</div>
+<div class="ex"><div class="en">Someone called me yesterday.</div><div class="kz">Кеше маған біреу қоңырау шалды.</div></div>
+<div class="ex"><div class="en">There is something in the bag.</div><div class="kz">Сөмкеде бір нәрсе бар.</div></div>
+<h3>Some- сұрақта қашан болады?</h3>
+<p>Жалпы ереже бойынша сұраулы сөйлемде <b>any</b> қолданылады. Бірақ <b>some</b> да сұрақта келе алады. Бұл әсіресе бір нәрсені <b>ұсынғанда (offer)</b> немесе <b>өтінгенде (request)</b> маңызды.</p>
+
+<div class="rule"><b>Негізгі айырмашылық:</b><br>
+Жай ақпарат сұрау → көбіне <b>any</b>.<br>
+Ұсыныс / өтініш, оң жауап күтіледі → көбіне <b>some</b>.</div>
+
+<h3>1. WOULD YOU LIKE + SOME + NOUN?</h3>
+<p><b>Would you like...?</b> — біреуге бір нәрсе ұсынудың сыпайы формасы. Егер ұсынатын нәрсе noun болса, <b>some + noun</b> қолдануға болады.</p>
+<div class="rule"><b>WOULD YOU LIKE + SOME + NOUN?</b></div>
+<div class="ex"><div class="en">Would you like some coffee?</div><div class="kz">Кофе ішесіз бе? / Кофе қалайсыз ба?</div></div>
+<div class="ex"><div class="en">Would you like some water?</div><div class="kz">Су қалайсыз ба?</div></div>
+<div class="ex"><div class="en">Would you like some cake?</div><div class="kz">Торттан аласыз ба?</div></div>
+<div class="note"><b>Неге some?</b> Бұл жерде біз жай ғана «кофе бар ма?» деп ақпарат сұрап тұрған жоқпыз. Біз адамға кофе <b>ұсынып тұрмыз</b>. Сондықтан сұрақ болса да <b>some</b> табиғи қолданылады.</div>
+
+<h3>2. WOULD YOU LIKE + SOMETHING?</h3>
+<p>Нақты затты атамай, «бір нәрсе» деп ұсынсақ, <b>something</b> қолданамыз.</p>
+<div class="rule"><b>WOULD YOU LIKE + SOMETHING + ...?</b></div>
+<div class="ex"><div class="en">Would you like something to drink?</div><div class="kz">Бір нәрсе ішкіңіз келе ме?</div></div>
+<div class="ex"><div class="en">Would you like something to eat?</div><div class="kz">Бір нәрсе жегіңіз келе ме?</div></div>
+<div class="ex"><div class="en">Would you like something sweet?</div><div class="kz">Тәтті бір нәрсе қалайсыз ба?</div></div>
+<div class="note"><b>Құрылымға қара:</b> <b>something to drink</b>, <b>something to eat</b>, <b>something sweet</b>. Something-нан кейін оның қандай нәрсе екенін нақтылайтын сөз/құрылым келе алады.</div>
+
+<h3>3. WOULD YOU LIKE + TO + VERB?</h3>
+<p>Егер бір нәрсені емес, <b>әрекетті</b> ұсынсақ, <b>Would you like to + V1?</b> қолданылады.</p>
+<div class="rule"><b>WOULD YOU LIKE + TO + VERB?</b></div>
+<div class="ex"><div class="en">Would you like to sit down?</div><div class="kz">Отырғыңыз келе ме?</div></div>
+<div class="ex"><div class="en">Would you like to come with us?</div><div class="kz">Бізбен бірге барғыңыз келе ме?</div></div>
+<div class="ex"><div class="en">Would you like to have some tea?</div><div class="kz">Шай ішкіңіз келе ме?</div></div>
+<div class="trap"><b>Есте сақта:</b><br>
+Would you like <b>some coffee</b>? → noun<br>
+Would you like <b>something to drink</b>? → indefinite pronoun<br>
+Would you like <b>to drink</b> something? → to + verb</div>
+
+<h3>4. REQUEST — БІР НӘРСЕНІ ӨТІНУ</h3>
+<p>Бір нәрсені сұрап, оның берілуін немесе орындалуын күткенде де <b>some</b> жиі қолданылады.</p>
+<div class="ex"><div class="en">Can I have some water, please?</div><div class="kz">Маған су бересіз бе?</div></div>
+<div class="ex"><div class="en">Could I have some sugar?</div><div class="kz">Маған қант бересіз бе?</div></div>
+<div class="ex"><div class="en">Can someone help me?</div><div class="kz">Маған біреу көмектесе ала ма?</div></div>
+<div class="note"><b>Логика:</b> сөйлем сұрақ формасында болғанымен, сөйлеуші тек ақпарат іздеп тұрған жоқ — ол <b>өтініш жасап тұр</b> және көмектесетін/беретін адам болады деп күтеді.</div>
+
+<h3>5. SOME vs ANY — сұрақта</h3>
+<table><tr><th>Жағдай</th><th>Қолданыс</th><th>Мысал</th></tr>
+<tr><td>Жай сұрақ, жауап белгісіз</td><td><b>any</b></td><td>Do you have <b>any</b> coffee?</td></tr>
+<tr><td>Ұсыныс</td><td><b>some</b></td><td>Would you like <b>some</b> coffee?</td></tr>
+<tr><td>Өтініш</td><td><b>some</b></td><td>Can I have <b>some</b> coffee?</td></tr>
+<tr><td>Белгісіз адамның бар-жоғын сұрау</td><td><b>anyone</b></td><td>Is <b>anyone</b> there?</td></tr></table>
+
+<div class="trap"><b>Exam trap:</b><br>
+Do you have <b>any</b> questions? ✅ — жай сұрақ.<br>
+Would you like <b>some</b> tea? ✅ — offer.<br>
+Can I have <b>some</b> tea? ✅ — request.</div>
+</section>
+
+<section id="any"><div class="n">03 · ANY-COMPOUNDS</div><h2>Anyone / Anybody / Anything / Anywhere</h2>
+<p><b>Any- compounds</b> көбіне <b>сұраулы</b> және <b>болымсыз</b> сөйлемдерде қолданылады.</p>
+<div class="rule"><b>anyone / anybody</b> → адам<br>
+<b>anything</b> → зат / нәрсе<br>
+<b>anywhere</b> → орын</div>
+<h3>1. ANY- сұраулы сөйлемде</h3>
+<p>Біреудің, бір нәрсенің немесе бір жердің бар-жоғын білмесек, сұрақта any-form қолданамыз.</p>
+<div class="rule"><b>QUESTION + ANY-FORM</b><br>
+Did <b>anyone</b> call?<br>
+Is there <b>anything</b> in the box?<br>
+Did you go <b>anywhere</b> yesterday?</div>
+<div class="note">Мұнда сөйлеуші оң жауапты алдын ала күтпейді. Ол жай ғана ақпарат сұрап тұр.</div>
+<h3>2. ANY- болымсыз сөйлемде</h3>
+<p>Сөйлемде <b>not / n't</b> арқылы negative verb болса, әдетте any-form қолданылады.</p>
+<div class="rule"><b>NEGATIVE VERB + ANY-FORM</b><br>
+I don't know <b>anyone</b> here.<br>
+I didn't buy <b>anything</b>.<br>
+We couldn't go <b>anywhere</b>.</div>
+<div class="trap">❌ I don't know someone here.<br>✅ I don't know <b>anyone</b> here.<br><br>
+❌ I didn't buy nothing. (standard English)<br>✅ I didn't buy <b>anything</b>.</div>
+<div class="ex"><div class="en">Did anyone call?</div><div class="kz">Біреу қоңырау шалды ма?</div></div>
+<div class="ex"><div class="en">I didn't see anybody.</div><div class="kz">Мен ешкімді көрмедім.</div></div>
+<div class="ex"><div class="en">I don't know anything about it.</div><div class="kz">Мен ол туралы ештеңе білмеймін.</div></div>
+<h3>3. ANY- affirmative сөйлемде = «кез келген»</h3>
+<p>Any-form тек question/negative үшін емес. <b>Affirmative</b> сөйлемде ол көбіне <b>кез келген адам / кез келген нәрсе / кез келген жер</b> деген мағына береді.</p>
+<div class="rule"><b>anyone</b> → кез келген адам<br><b>anything</b> → кез келген нәрсе<br><b>anywhere</b> → кез келген жерде / жерге</div>
+<div class="ex"><div class="en">Anyone can learn English.</div><div class="kz">Кез келген адам ағылшын тілін үйрене алады.</div></div>
+<div class="ex"><div class="en">You can sit anywhere.</div><div class="kz">Кез келген жерге отыра аласың.</div></div>
+<div class="trap"><b>Exam trap:</b> negative verb бар болса, әдетте any-form қолданылады:<br>✅ I don't know <b>anyone</b> here.<br>❌ I don't know <b>someone</b> here.</div></section>
+
+<section id="every"><div class="n">04 · EVERY-COMPOUNDS</div><h2>Everyone / Everybody / Everything / Everywhere</h2>
+<p><b>Every- compounds</b> белгілі бір топтың немесе жағдайдың <b>барлығын толық қамтиды</b>.</p>
+<div class="rule"><b>everyone / everybody</b> → барлық адам / бәрі<br>
+<b>everything</b> → барлық нәрсе / бәрі<br>
+<b>everywhere</b> → барлық жерде</div>
+<h3>1. Everyone / Everybody — барлық адам</h3>
+<p>Everyone және everybody мағынасы бірдей. Олар адамдар тобындағы әр адамды қамтиды.</p>
+<div class="ex"><div class="en">Everyone is ready.</div><div class="kz">Барлығы дайын.</div></div>
+<div class="note"><b>Everyone ≠ every one.</b><br>
+<b>everyone</b> → барлық адам.<br>
+<b>every one (of...)</b> → топтағы әрқайсысы: Every one of these answers is important.</div>
+<h3>2. Everything — барлық нәрсе</h3>
+<p>Everything заттар, жағдайлар немесе ақпараттың барлығын білдіреді.</p>
+<div class="ex"><div class="en">Everything is ready.</div><div class="kz">Барлығы дайын.</div></div>
+<h3>3. Everywhere — барлық жерде</h3>
+<p>Everywhere орынға қатысты. Оның алдында әдетте <b>in / at / to</b> қажет емес.</p>
+<div class="ex"><div class="en">We looked everywhere.</div><div class="kz">Біз барлық жерден іздедік.</div></div>
+<div class="trap">❌ in everywhere<br>✅ everywhere</div>
+<div class="ex"><div class="en">Everyone is ready.</div><div class="kz">Барлығы дайын.</div></div>
+<div class="ex"><div class="en">Everything looks fine.</div><div class="kz">Барлығы жақсы көрінеді.</div></div>
+<div class="ex"><div class="en">We looked everywhere.</div><div class="kz">Біз барлық жерден іздедік.</div></div></section>
+
+<section id="verb"><div class="n">05 · VERB AGREEMENT</div><h2>Indefinite Pronouns + Singular Verb</h2>
+<p><b>-one, -body және -thing</b> арқылы жасалған indefinite pronouns мағынасы бірнеше адамға қатысты көрінсе де, грамматикалық тұрғыдан <b>singular</b> болып есептеледі.</p>
+<div class="rule"><b>someone / somebody + singular verb</b><br>
+<b>anyone / anybody + singular verb</b><br>
+<b>everyone / everybody + singular verb</b><br>
+<b>something / anything / everything + singular verb</b></div>
+<p>Present Simple-де бұл әсіресе <b>is / has</b> және етістікке <b>-s/-es</b> жалғауынан көрінеді.</p>
+<div class="rule">Everyone <b>is</b> ready. ✅<br>Someone <b>has</b> called. ✅<br>Everything <b>looks</b> good. ✅</div>
+<div class="trap">❌ Everyone <b>are</b> ready.<br>✅ Everyone <b>is</b> ready.</div>
+<div class="note"><b>Бірақ кейінгі pronoun басқа болуы мүмкін:</b> қазіргі ағылшын тілінде жынысы белгісіз адамға қайта сілтеме жасағанда singular <b>they / them / their</b> қалыпты қолданылады:<br><br>
+<b>Someone has left their bag.</b><br>
+Someone = грамматикалық singular → <b>has</b>.<br>
+Жынысы белгісіз → кейін <b>their</b> қолдануға болады.</div>
+<div class="trap">❌ Everyone <b>are</b> ready.<br>
+❌ Someone <b>have</b> called.<br>
+❌ Everything <b>look</b> good.<br><br>
+✅ Everyone <b>is</b> ready.<br>
+✅ Someone <b>has</b> called.<br>
+✅ Everything <b>looks</b> good.</div></section>
+
+<section id="else"><div class="n">06 · ELSE & ADJECTIVES</div><h2>Something else · Someone new</h2>
+<h3>1. ELSE — «тағы / басқа»</h3>
+<p><b>Else</b> «тағы», «басқа» деген мағына береді және indefinite pronoun-нан <b>кейін</b> орналасады.</p>
+<div class="rule"><b>indefinite pronoun + ELSE</b><br>
+someone else → басқа біреу<br>
+something else → басқа/тағы бір нәрсе<br>
+anyone else → тағы біреу / басқа біреу<br>
+anything else → тағы бір нәрсе<br>
+somewhere else → басқа жерде</div>
+<div class="ex"><div class="en">Do you want anything else?</div><div class="kz">Тағы бір нәрсе қалайсың ба?</div></div>
+<div class="ex"><div class="en">Someone else answered the question.</div><div class="kz">Сұраққа басқа біреу жауап берді.</div></div>
+<h3>2. Adjective қай жерде тұрады?</h3>
+<p>Кәдімгі noun-мен adjective көбіне noun-ның алдында тұрады: <b>an interesting book</b>. Бірақ indefinite pronoun-мен adjective <b>кейін</b> тұрады.</p>
+<div class="rule"><b>INDEFINITE PRONOUN + ADJECTIVE</b><br>
+something <b>interesting</b><br>
+someone <b>new</b><br>
+anything <b>useful</b><br>
+nothing <b>important</b></div>
+<div class="note"><b>Салыстыр:</b><br>
+an <b>interesting book</b> → adjective + noun<br>
+something <b>interesting</b> → indefinite pronoun + adjective</div>
+<div class="trap">❌ interesting something<br>✅ something interesting</div></section>
+
+<section class="gold" id="compare"><div class="n">07 · QUICK COMPARE</div><h2>Some vs Any vs Every — қалай ажыратамыз?</h2>
+<div class="rule"><b>1.</b> Affirmative және «біреу/бір нәрсе» → көбіне <b>some-</b>.<br>
+<b>2.</b> Question/negative → көбіне <b>any-</b>.<br>
+<b>3.</b> Offer/request және оң жауап күтілсе → сұрақта да <b>some-</b>.<br>
+<b>4.</b> Affirmative-де «кез келген» → <b>any-</b>.<br>
+<b>5.</b> «Барлығы» → <b>every-</b>.</div>
+<table><tr><th>Форма</th><th>Негізгі мағына/жағдай</th><th>Мысал</th></tr>
+<tr><td><b>someone / something</b></td><td>белгісіз біреу/бір нәрсе; көбіне affirmative</td><td>Someone is outside.</td></tr>
+<tr><td><b>anyone / anything</b></td><td>question / negative; affirmative-де «кез келген»</td><td>Did anyone call?</td></tr>
+<tr><td><b>everyone / everything</b></td><td>барлығы</td><td>Everyone is here.</td></tr></table>
+<div class="note"><b>Negative pronouns-пен байланысы:</b><br>I saw <b>nobody</b>. = I didn't see <b>anybody</b>.<br>I know <b>nothing</b>. = I don't know <b>anything</b>.</div></section>
+
+<section class="gold" id="review"><div class="n">FINAL REVIEW · 20 QUESTIONS</div><h2>Indefinite Pronouns · Exam Practice</h2><div id="questions"></div><button class="resultBtn" id="showResult">Нәтижені көрсету</button><div class="score" id="scoreBox"></div></section>
+</main>
+
+<svg id="studyCanvas"></svg><div id="notesPanel"><b>NOTES</b><textarea id="notesArea" placeholder="Сабақ бойынша жазба..."></textarea></div>
+<div id="studyTools"><button data-tool="pen" title="Pen">✎</button><button data-tool="marker" title="Marker">▰</button><button data-tool="eraser" title="Eraser">⌫</button><button id="undoTool">↶</button><button id="clearTool">×</button><button id="notesTool">N</button></div>
+<script>
+const data=[
+["There is ___ at the door.",["someone","anywhere","everything","nothing"],"A","Affirmative сөйлемде белгісіз адам → someone."],
+["Did ___ call me?",["someone","anyone","everything","somewhere"],"B","Сұраулы сөйлем → anyone."],
+["I don't know ___ here.",["someone","anyone","everyone","somewhere"],"B","Negative verb + any-form → anyone."],
+["___ is ready for the exam.",["Everyone","Anywhere","Something","Nobody are"],"A","Everyone = барлық адам және singular verb алады."],
+["I need ___ to write with.",["someone","something","somewhere","everyone"],"B","Зат/нәрсе → something."],
+["We couldn't find the keys ___.",["someone","anywhere","everyone","something"],"B","Negative context + place → anywhere."],
+["You can choose ___ you like.",["anyone","anything","someone","nothing"],"B","Affirmative-де anything = кез келген нәрсе."],
+["___ has left their phone here.",["Someone","Anywhere","Everything","Somewhere"],"A","Адам → someone; singular has."],
+["Would you like ___ to eat?",["anything","something","anywhere","everyone"],"B","Would you like...? — offer. Нақты зат аталмағандықтан something to eat қолданылады."],
+["Choose the correct sentence.",["Everyone are ready.","Everyone is ready.","Everyone be ready.","Everyone have ready."],"B","Everyone грамматикалық singular → is."],
+["I want to tell you ___.",["something important","important something","someone important thing","anywhere important"],"A","Adjective indefinite pronoun-нан кейін тұрады."],
+["Do you need ___ else?",["anything","anywhere person","everyone","someone thing"],"A","Question + thing → anything; else кейін тұрады."],
+["Would you like ___ coffee?",["any","some","anyone","anything"],"B","Would you like...? — offer, сондықтан сұрақта some қолданылады."],
+["Can I have ___ water, please?",["any","some","anyone","everything"],"B","Бұл request — бір нәрсені сұрап тұрмыз, сондықтан some табиғи қолданылады."],
+["___ in the room was quiet.",["Everything","Everyone","Anywhere","Something place"],"B","Адамдардың барлығы → everyone."],
+["I didn't hear ___.",["something","anything","everything necessarily","someone"],"B","Negative + thing → anything."],
+["Choose the correct phrase.",["new someone","someone new","someone newly person","a someone new"],"B","Adjective indefinite pronoun-нан кейін келеді."],
+["Someone ___ waiting outside.",["are","is","were","have"],"B","Someone singular → is."],
+["I saw nobody. Choose the equivalent.",["I didn't see anybody.","I didn't see somebody.","I saw anybody.","I didn't see everybody."],"A","Nobody + affirmative = not + anybody."],
+["Which sentence means «кез келген адам қатыса алады»?",["Someone can participate.","Anyone can participate.","No one can participate.","Everyone must participate."],"B","Affirmative anyone = кез келген адам."]
+];
+const box=document.getElementById("questions");
+data.forEach((x,i)=>{let d=document.createElement("div");d.className="test reviewq";d.dataset.answer=x[2];d.innerHTML=`<div class="n">REVIEW ${String(i+1).padStart(2,"0")}</div><p class="q">${x[0]}</p>`+x[1].map((o,j)=>`<div class="opt" data-letter="${String.fromCharCode(65+j)}">${String.fromCharCode(65+j)}) ${o}</div>`).join("")+`<div class="ans answer" style="display:none"><b>Дұрыс жауап: ${x[2]}) ${x[1][x[2].charCodeAt(0)-65]}.</b><br>${x[3]}</div>`;box.appendChild(d)});
+document.querySelectorAll(".reviewq .opt").forEach(o=>o.onclick=()=>{let q=o.closest(".reviewq");q.querySelectorAll(".opt").forEach(x=>x.classList.remove("selected"));o.classList.add("selected")});
+showResult.onclick=()=>{let qs=[...document.querySelectorAll(".reviewq")],score=0,empty=0;qs.forEach(q=>{let sel=q.querySelector(".selected"),right=q.querySelector(`[data-letter="${q.dataset.answer}"]`);right.classList.add("correct");if(!sel)empty++;else if(sel.dataset.letter===q.dataset.answer)score++;else sel.classList.add("wrong");q.querySelector(".answer").style.display="block"});scoreBox.classList.add("show");scoreBox.textContent=`Нәтиже: ${score} / ${qs.length}`+(empty?` · Жауап берілмеген: ${empty}`:"")};
+const svg=studyCanvas,bar=studyTools;let tool=null,drawing=false,path=null,hist=[],lockedX=0,lockedY=0,guard=false;
+function size(){svg.setAttribute("width",Math.max(document.documentElement.scrollWidth,innerWidth));svg.setAttribute("height",Math.max(document.documentElement.scrollHeight,innerHeight))}
+size();addEventListener("resize",size);new ResizeObserver(size).observe(document.body);
+function block(e){if(tool){e.preventDefault();e.stopPropagation()}}
+function hold(){if(!tool||guard)return;let x=scrollX||0,y=scrollY||0;if(Math.abs(x-lockedX)>1||Math.abs(y-lockedY)>1){guard=true;scrollTo(lockedX,lockedY);requestAnimationFrame(()=>guard=false)}}
+function lock(){lockedX=scrollX||0;lockedY=scrollY||0;document.documentElement.classList.add("study-lock");document.body.classList.add("study-lock");document.addEventListener("touchmove",block,{passive:false,capture:true});document.addEventListener("gesturestart",block,{passive:false,capture:true});document.addEventListener("gesturechange",block,{passive:false,capture:true});addEventListener("scroll",hold,{passive:true})}
+function unlock(){document.removeEventListener("touchmove",block,{capture:true});document.removeEventListener("gesturestart",block,{capture:true});document.removeEventListener("gesturechange",block,{capture:true});removeEventListener("scroll",hold);document.documentElement.classList.remove("study-lock");document.body.classList.remove("study-lock");requestAnimationFrame(()=>scrollTo(lockedX,lockedY))}
+function setTool(t){if(tool===t){tool=null;drawing=false;path=null;unlock()}else{if(tool)unlock();tool=t;lock()}bar.querySelectorAll("[data-tool]").forEach(b=>b.classList.toggle("active",b.dataset.tool===tool));svg.style.pointerEvents=tool?"auto":"none";size()}
+bar.querySelectorAll("[data-tool]").forEach(b=>b.onclick=e=>{e.preventDefault();e.stopPropagation();setTool(b.dataset.tool)});
+const pt=e=>[e.clientX+(scrollX||0),e.clientY+(scrollY||0)];
+svg.onpointerdown=e=>{if(!tool)return;e.preventDefault();e.stopPropagation();try{svg.setPointerCapture(e.pointerId)}catch(_){}
+if(tool==="eraser"){for(const p of [...svg.querySelectorAll("path")].reverse()){let r=p.getBoundingClientRect();if(e.clientX>=r.left-25&&e.clientX<=r.right+25&&e.clientY>=r.top-25&&e.clientY<=r.bottom+25){hist.push({t:"e",n:p,next:p.nextSibling});p.remove();break}}return}
+drawing=true;let[x,y]=pt(e);path=document.createElementNS("http://www.w3.org/2000/svg","path");path.setAttribute("d",`M ${x} ${y}`);path.setAttribute("fill","none");path.setAttribute("stroke-linecap","round");path.setAttribute("stroke-linejoin","round");if(tool==="marker"){path.setAttribute("stroke","#d9b84c");path.setAttribute("stroke-width","18");path.setAttribute("opacity",".35")}else{path.setAttribute("stroke","#102b4c");path.setAttribute("stroke-width","3")}svg.appendChild(path);hist.push({t:"a",n:path})};
+svg.onpointermove=e=>{if(!drawing||!path)return;e.preventDefault();e.stopPropagation();let[x,y]=pt(e);path.setAttribute("d",path.getAttribute("d")+` L ${x} ${y}`)};
+svg.onpointerup=svg.onpointercancel=()=>{drawing=false;path=null};
+undoTool.onclick=()=>{let h=hist.pop();if(!h)return;if(h.t==="a")h.n.remove();else svg.insertBefore(h.n,h.next&&h.next.parentNode===svg?h.next:null)};
+clearTool.onclick=()=>{svg.querySelectorAll("path").forEach(p=>p.remove());hist=[]};
+notesArea.value=localStorage.getItem("magist_indefinite_notes")||"";notesArea.oninput=()=>localStorage.setItem("magist_indefinite_notes",notesArea.value);notesTool.onclick=()=>{if(tool)setTool(tool);notesPanel.classList.toggle("show")};</script></body></html>
